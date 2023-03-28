@@ -88,4 +88,17 @@ def get_updates(username,receiver_email):
         pass
         
 def get_all_updates():
-	get_updates("saheedniyi_02","saheedniyi02@gmail.com")
+    get_updates("ChinaPumpWXC","sodiq.yusuf.a33@gmail.com")
+    get_updates("realdogen","sodiq.yusuf.a33@gmail.com")
+    get_updates("Poe_Ether","sodiq.yusuf.a33@gmail.com")
+    get_updates("CryptoTalkMan","sodiq.yusuf.a33@gmail.com")
+    get_updates("CryptoKvon","sodiq.yusuf.a33@gmail.com")
+    get_updates("Thorshammergems","sodiq.yusuf.a33@gmail.com")
+    get_updates("VenomCrypto_","sodiq.yusuf.a33@gmail.com")
+    get_updates("dr_crypto_calls","sodiq.yusuf.a33@gmail.com")
+    get_updates("bruiserscalls","sodiq.yusuf.a33@gmail.com")
+    get_updates("CaesarsCalls","sodiq.yusuf.a33@gmail.com")
+    get_updates("sirmapy","sodiq.yusuf.a33@gmail.com")
+    get_updates("Call_me_Cypher","sodiq.yusuf.a33@gmail.com")
+    
+    
