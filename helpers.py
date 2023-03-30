@@ -1,14 +1,15 @@
 from tweepy import API,Client,OAuth1UserHandler
 import json
 import smtplib
+import os
 
 
 
 auth = OAuth1UserHandler(
-    consumer_key=API_KEY,
-    consumer_secret=API_SECRET_KEY,
-    access_token=ACCESS_TOKEN,
-    access_token_secret=ACCESS_TOKEN_SECRET
+    consumer_key=os.environ.get("API_KEY"),
+    consumer_secret=os.environ.get("API_SECRET_KEY"),
+    access_token=os.environ.get("ACCESS_TOKEN"),
+    access_token_secret=os.environ.get("ACCESS_TOKEN_SECRET")
 )
 
 api = API(auth)
@@ -62,18 +63,18 @@ def create_message(username, new_followers ):
     
 def send_email(message,receiver_email):
     # creates SMTP session
-    s = smtplib.SMTP(MAIL_SERVER, MAIL_PORT)
+    s = smtplib.SMTP(os.environ.get("MAIL_SERVER"), os.environ.get("MAIL_PORT"))
 
     # start TLS for security
     s.starttls()
 
     # Authentication
 
-    s.login(MAIL_USERNAME,MAIL_PASSWORD)
+    s.login(os.environ.get("MAIL_USERNAME"),os.environ.get("MAIL_PASSWORD"))
     
     # sending the mail
    
-    s.sendmail(MAIL_USERNAME, receiver_email, message)
+    s.sendmail(os.environ.get("MAIL_USERNAME"), receiver_email, message)
     # terminating the session
     s.quit()
     
