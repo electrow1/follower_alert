@@ -2,6 +2,7 @@ from tweepy import API,Client,OAuth1UserHandler
 import json
 import smtplib
 import os
+import time
 
 
 
@@ -90,16 +91,28 @@ def get_updates(username,receiver_email):
         
 def get_all_updates():
     get_updates("ChinaPumpWXC","sodiq.yusuf.a33@gmail.com")
+    time.sleep(10)
     get_updates("realdogen","sodiq.yusuf.a33@gmail.com")
+    time.sleep(10)
     get_updates("Poe_Ether","sodiq.yusuf.a33@gmail.com")
+    time.sleep(10)
     get_updates("CryptoTalkMan","sodiq.yusuf.a33@gmail.com")
+    time.sleep(10)
     get_updates("CryptoKvon","sodiq.yusuf.a33@gmail.com")
+    time.sleep(10)
     get_updates("Thorshammergems","sodiq.yusuf.a33@gmail.com")
+    time.sleep(10)
     get_updates("VenomCrypto_","sodiq.yusuf.a33@gmail.com")
+    time.sleep(10)
     get_updates("dr_crypto_calls","sodiq.yusuf.a33@gmail.com")
+    time.sleep(10)
     get_updates("bruiserscalls","sodiq.yusuf.a33@gmail.com")
+    time.sleep(10)
     get_updates("CaesarsCalls","sodiq.yusuf.a33@gmail.com")
+    time.sleep(10)
     get_updates("sirmapy","sodiq.yusuf.a33@gmail.com")
+    time.sleep(10)
     get_updates("Call_me_Cypher","sodiq.yusuf.a33@gmail.com")
+    time.sleep(10)
     
     
