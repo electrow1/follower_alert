@@ -64,7 +64,7 @@ def create_message(username, new_followers ):
     
 def send_email(message,receiver_email):
     # creates SMTP session
-    s = smtplib.SMTP(os.environ.get("MAIL_SERVER"), os.environ.get("MAIL_PORT"))
+    s = smtplib.SMTP(os.environ.get("MAIL_SERVER"), int(os.environ.get("MAIL_PORT")))
 
     # start TLS for security
     s.starttls()
